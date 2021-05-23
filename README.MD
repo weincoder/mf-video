@@ -28,4 +28,4 @@ declarations: [AppComponent, EmptyRouteComponent];
 
 - Zone (Se debe importar el script del cdn de zone para proyectos angular en el container)
 - Para que las aplicaciones no se sobreescriban se debe modificar el selector como estandar
-  pusimos bc-{proyecto}-{mf}
+  pusimos mf-{mf-name}
