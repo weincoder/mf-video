@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mf-header": {
+    "bc-header": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -12,12 +12,12 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "weincode",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "dist/mf-header",
+            "outputPath": "dist/bc-header",
             "index": "src/index.html",
             "main": "src/main.single-spa.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,7 @@
             "scripts": [],
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
-              "libraryName": "mf-header",
+              "libraryName": "bc-header",
               "libraryTarget": "umd"
             }
           },
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "mf-header:build"
+            "browserTarget": "bc-header:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mf-header:build:production"
+              "browserTarget": "bc-header:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mf-header:build"
+            "browserTarget": "bc-header:build"
           }
         },
         "test": {
@@ -107,18 +107,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mf-header:serve"
+            "devServerTarget": "bc-header:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mf-header:serve:production"
+              "devServerTarget": "bc-header:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "mf-header",
+  "defaultProject": "bc-header",
   "cli": {
     "analytics": "56d2b243-6d59-452e-9403-6a7c24a76697"
   }

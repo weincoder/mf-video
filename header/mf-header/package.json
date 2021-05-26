@@ -1,15 +1,15 @@
 {
-  "name": "mf-header",
+  "name": "bc-header",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng s --project bc-header --disable-host-check --port 4210 --deploy-url http://localhost:4210/ --live-reload false",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:single-spa:mf-header": "ng build mf-header --prod --deploy-url http://localhost:4200/",
-    "serve:single-spa:mf-header": "ng s --project mf-header --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false"
+    "build:single-spa:bc-header": "ng build bc-header --prod --deploy-url http://localhost:4200/",
+    "serve:single-spa:bc-header": "ng s --project bc-header --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false"
   },
   "private": true,
   "dependencies": {
