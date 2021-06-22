@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Root Config</title>
+  <title>Weincode-MF Demo</title>
+  <link rel="icon" type="image/png" href="https://github.com/Danielherresan/algoritmos202101/blob/main/LOGO%20isotipo%5BRecuperado%5D.png?raw=true"/>
+
   <!--
     Remove this if you only support browsers that support async/await.
     This is needed by babel to share largeish helper code for compiling async/await in older
@@ -49,10 +51,17 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "react": "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js",
         "@weincode/root-config": "//localhost:9000/weincode-root-config.js",
         "@weincode/mf-header": "//localhost:4200/main.js",
+        "@weincode/mf-main": "//localhost:4202/main.js",
+        "@weincode/mf-react": "//localhost:8080/weincode-mf-react.js",
+        "@weincode/mf-react-prueba": "//localhost:8081/weincode-mf-react-prueba.js",
         "@weincode/mf-images": "//localhost:4204/main.js",
-        "@weincode/mf-main": "//localhost:4202/main.js"
+        "@weincode/mf-cats": "//localhost:4206/main.js",
+        "@weincode/mf-set-id": "//localhost:4210/main.js",
+        "@weincode/mf-footer": "//localhost:4208/main.js"
 
       }
     }
@@ -79,14 +88,20 @@
   <% } %>
 </head>
 <body>
-  <header>
-    <section id="single-spa-application:@weincode/mf-header"></section>
+  <header  id="single-spa-application:@weincode/mf-header">
   </header>
-  <main style="height: 58vh;">
+  <main style="min-height: 70vh;margin-bottom: 15px;">
+    <section id="single-spa-application:@weincode/mf-react"></section>
+    <section id="single-spa-application:@weincode/mf-react-prueba"></section>
+    <section id="single-spa-application:@weincode/mf-set-id"></section>
     <section id="single-spa-application:@weincode/mf-main"></section>
     <section id="single-spa-application:@weincode/mf-images"></section>
-
+    <section id="single-spa-application:@weincode/mf-cats"></section>
   </main>
+
+  <footer id="single-spa-application:@weincode/mf-footer">
+
+  </footer>
   <script>
     System.import('@weincode/root-config');
   </script>

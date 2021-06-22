@@ -1,0 +1,23 @@
+<section [ngClass]="isBordered ? 'bordered' : 'notBorder'">
+  <section class="card card-1 row"
+  >
+    <div>
+      
+      <input
+        class="form-control me-2"
+        type="text"
+        style="margin-bottom: 15px; margin-top: 5%; text-align: center;"
+        placeholder="id"
+        #commonName
+        name="commonName"
+        value=""
+      />
+      <button class="btn btn-dark btn-rounded"
+        (click)="clic(commonName.value)"
+
+      >
+        Refresh
+      </button>
+    </div>
+  </section>
+</section>

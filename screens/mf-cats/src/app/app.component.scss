@@ -1,0 +1,9 @@
+.bordered {
+  border: 5px solid rgb(15, 102, 143);
+  margin: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.notBorder {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: none;
+}

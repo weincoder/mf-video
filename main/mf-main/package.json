@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng  s --project mf-main --disable-host-check --port 4202 --deploy-url http://localhost:4202/ --live-reload false",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

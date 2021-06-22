@@ -1,3 +1,14 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+.bordered {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 5px solid rgb(140, 0, 255);
+}
+.notBorder {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: none;
+}
+#wc-header{
+  box-shadow: 0 14px 14px rgb(110 110 110 / 5%), 0 2px 2px rgb(110 109 110 / 5%);
+}

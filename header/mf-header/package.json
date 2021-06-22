@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng s --project bc-header --disable-host-check --port 4210 --deploy-url http://localhost:4210/ --live-reload false",
+    "start": "ng s --project bc-header --disable-host-check --port 4200 --deploy-url http://localhost:4200/ --live-reload false",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

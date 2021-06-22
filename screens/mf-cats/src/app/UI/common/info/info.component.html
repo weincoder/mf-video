@@ -1,0 +1,19 @@
+<h1>Gato ID :</h1>
+<app-circular-progress-indicator
+  *ngIf="!datos?.id"
+></app-circular-progress-indicator>
+<h2 class="title">{{ datos?.id }}</h2>
+<h2>foto:</h2>
+<app-circular-progress-indicator
+  *ngIf="!datos?.url"
+></app-circular-progress-indicator>
+<figure *ngIf="datos?.url">
+  <img
+    src="{{ datos?.url }}"
+    alt="imagen de un gato"
+    class="col-sm-12 col-md-8 "
+  />
+</figure>
+<a class="link-secondary" [routerLink]="['/mf-cats/buy']" routerLinkActive="active"
+  >COMPRAR</a
+>

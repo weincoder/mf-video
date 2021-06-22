@@ -1,3 +1,10 @@
 * {
   margin: auto;
 }
+.bordered {
+  border: 5px solid rgb(56, 15, 110);
+  margin: 20px;
+}
+.notBorder {
+  border: none;
+}
